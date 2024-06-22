@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // 禁用Next.js图片优化，以支持静态导出
   },
-  basePath: '/project1', // 替换为你的 GitHub 仓库名
-  assetPrefix: '/project1', // 替换为你的 GitHub 仓库名
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  assetPrefix: process.env.NEXT_PUBLIC_ASSET_PREFIX || '',
 };
 
 export default nextConfig;
